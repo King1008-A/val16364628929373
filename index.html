@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Aaditi 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ffb3c6, #ffe5ec);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      padding: 36px 32px;
+      border-radius: 26px;
+      text-align: center;
+      width: 90%;
+      max-width: 440px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      color: #ff4d6d;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #555;
+      font-size: 17px;
+      margin-bottom: 14px;
+    }
+
+    .photos {
+      display: flex;
+      overflow: hidden;
+      border-radius: 18px;
+      margin-bottom: 22px;
+    }
+
+    .photos img {
+      width: 100%;
+      flex-shrink: 0;
+      animation: slide 18s infinite;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      30% { transform: translateX(0); }
+      40% { transform: translateX(-100%); }
+      70% { transform: translateX(-100%); }
+      80% { transform: translateX(-200%); }
+      100% { transform: translateX(-200%); }
+    }
+
+    .buttons {
+      position: relative;
+      height: 140px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 14px 30px;
+      font-size: 18px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      transition: transform 0.25s ease;
+    }
+
+    #yesBtn {
+      background: #ff4d6d;
+      color: white;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
+
+    #yesBtn:hover {
+      transform: translateX(-50%) scale(1.05);
+    }
+
+    #noBtn {
+      background: #f1f1f1;
+      color: #666;
+      left: 18%;
+      top: 0;
+    }
+
+    .final {
+      display: none;
+    }
+
+    .hearts {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 22px;
+      animation: floatUp 5s linear forwards;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(0); opacity: 1; }
+      to { transform: translateY(-100vh); opacity: 0; }
+    }
+
+    .letter {
+      margin-top: 22px;
+    }
+
+    .envelope {
+      background: #ffe0e9;
+      padding: 18px;
+      border-radius: 18px;
+      font-weight: 500;
+      color: #ff4d6d;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .envelope:hover {
+      transform: scale(1.04);
+    }
+
+    .letter-content {
+      display: none;
+      background: #fff5f8;
+      padding: 28px;
+      margin-top: 18px;
+      border-radius: 18px;
+      text-align: left;
+      font-family: 'Dancing Script', cursive;
+      font-size: 20px;
+      line-height: 1.7;
+      letter-spacing: 0.4px;
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<audio id="bgMusic" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card" id="card">
+  <h1>Hey Aaditi 💖</h1>
+
+  <div class="photos">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <img src="photo3.jpg">
+  </div>
+
+  <p>Will you be my Valentine?</p>
+
+  <div class="buttons">
+    <button id="yesBtn">Yes 💕</button>
+    <button id="noBtn">No 🙄</button>
+  </div>
+</div>
+
+<div class="card final" id="finalCard">
+  <h1>One more thing 💌</h1>
+  <p>I wanted you to read this slowly.</p>
+
+  <div class="letter">
+    <div class="envelope" onclick="openLetter()">✉️ Open my letter</div>
+    <div class="letter-content" id="letterContent">
+
+      <p>My dearest Aaditi,</p>
+
+      <p>
+      I don’t think love is loud.
+      I think it’s quiet and steady,
+      and somehow it always finds its way back to you.
+      That’s how you feel to me.
+      </p>
+
+      <p>
+      You slipped into my life so naturally that I didn’t notice
+      when everything started to feel lighter,
+      warmer,
+      more like home.
+      Somewhere along the way,
+      you became my safe place,
+      my princess,
+      my bubba.
+      </p>
+
+      <p>
+      I love the way you exist in my world.
+      In the small moments.
+      In the pauses.
+      In the way you make me smile without trying.
+      Loving you feels easy,
+      and at the same time,
+      it feels deeply special.
+      </p>
+
+      <p>
+      I don’t promise perfection.
+      I promise presence.
+      Choosing you,
+      showing up for you,
+      and loving you in all the quiet ways that last.
+      </p>
+
+      <p>
+      So this is me,
+      heart open,
+      choosing you again.
+      </p>
+
+      <p>Will you be my Valentine?</p>
+
+      <p>Always yours,<br>❤️</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="hearts" id="hearts"></div>
+
+<script>
+  const music = document.getElementById("bgMusic");
+  music.volume = 0;
+  let targetVolume = 0.18;
+
+  music.addEventListener("play", () => {
+    let vol = 0;
+    const fade = setInterval(() => {
+      if (vol >= targetVolume) {
+        clearInterval(fade);
+      } else {
+        vol += 0.01;
+        music.volume = vol;
+      }
+    }, 200);
+  });
+
+  const noBtn = document.getElementById("noBtn");
+  const yesBtn = document.getElementById("yesBtn");
+  const card = document.getElementById("card");
+  const finalCard = document.getElementById("finalCard");
+  const hearts = document.getElementById("hearts");
+
+  let noCount = 0;
+
+  function moveNo() {
+    noCount++;
+    if (noCount >= 4) {
+      noBtn.style.display = "none";
+      return;
+    }
+    noBtn.style.left = Math.random() * 70 + "%";
+    noBtn.style.top = Math.random() * 70 + "%";
+  }
+
+  noBtn.addEventListener("mouseenter", moveNo);
+  noBtn.addEventListener("click", moveNo);
+
+  yesBtn.addEventListener("click", () => {
+    card.style.display = "none";
+    finalCard.style.display = "block";
+    startHearts();
+  });
+
+  function startHearts() {
+    setInterval(() => {
+      const h = document.createElement("div");
+      h.className = "heart";
+      h.textContent = "❤️";
+      h.style.left = Math.random() * 100 + "vw";
+      h.style.bottom = "-20px";
+      hearts.appendChild(h);
+      setTimeout(() => h.remove(), 5000);
+    }, 450);
+  }
+
+  function openLetter() {
+    document.getElementById("letterContent").style.display = "block";
+    targetVolume = 0.08;
+    music.volume = targetVolume;
+  }
+</script>
+
+</body>
+</html>
